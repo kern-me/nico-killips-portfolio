@@ -1,0 +1,25 @@
+$font-body: "Barlow", sans-serif;
+$font-condensed: "Barlow Condensed", sans-serif;
+
+$color-sea-green: #026670;
+$color-mint: #9FEDD7;
+$color-creme: #FEF9C7;
+$color-sand: #FCE181;
+$color-dark-gray: #666;
+$color-gray: #EDEAE5;
+$color-body: #010101;
+
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (min-width: 430px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 1024.5px) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: 1920px) { @content; }
+  }
+  @else if $point == xlarge {
+    @media (min-width: 2560px) { @content; }
+  }
+}
