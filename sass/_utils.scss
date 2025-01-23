@@ -1,0 +1,26 @@
+@use 'vars';
+
+.u-circle {
+  border-radius: 100%;
+}
+
+.u-border-top--light {
+  border-top: 1px solid vars.$color-gray
+}
+
+.u-bg--light {
+  background: rgb(251,251,251);
+  background: radial-gradient(circle, rgba(251,251,251,1) 0%, rgba(240,240,240,1) 100%);
+}
+
+.u-text--center {
+  text-align: center;
+}
+
+.u-text--italic {
+  font-style: italic;
+}
+
+.u-text--dark-green {
+  color: vars.$color-sea-green
+}

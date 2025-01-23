@@ -39,18 +39,13 @@ section {
     flex-direction: column;
     justify-content: flex-start;
   }
-  h1 {
-    font-size: 7rem;
-    line-height: 75%;
-    margin-bottom: 1rem;
-    margin-left: -3px;
-  }
 }
 
 @container section-row (width > 75ch) {
   .u-row {
     flex-direction: row;
-    h1 {
+    .u-heading--xl,
+    .u-heading--l {
       line-height: 80%;
     }
   }

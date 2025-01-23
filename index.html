@@ -23,7 +23,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,800;1,800&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
@@ -56,14 +56,98 @@
       <div class="inner">
         <div class="u-row u-row--reversed">
           <div class="u-col">
-            <h1>Hi! I'm Nico.</h1>
-            <h2>I build front-ends from scratch and sometimes with frameworks.</h2>
-            <p>I'm a Michigan-based frontend developer of over 15 years. I love building websites that are simple, usable, and effective.</p>
+            <h1 class="u-heading--xl">Hi! I'm <span class="u-text--dark-green">Nico.</span></h1>
+            <h2 class="u-heading--m">I build websites from scratch and sometimes with frameworks.</h2>
+            <p>I'm a Michigan-based frontend developer who loves building simple, usable, and effective websites.</p>
           </div>
           <div class="u-col">
             <img class="u-circle u-content-center headshot" src="img/nico-headshot-blk-white.jpg" alt="Nico" />
           </div>
         </div>
+      </div>
+    </section>
+    <section id="work" class="u-bg--light u-border-top--light">
+      <div class="inner">
+        <h2 class="u-heading--l u-text--center">Featured Work</h2>
+        <div class="u-row u-row--reversed">
+          <div class="u-col">
+            <div class="featured-work-img-container u-pt--l">
+              <img class="u-img u-img--xl" src="/dist/img/bluekc-large.png" alt="" role="presentation"/>
+              <img class="u-img u-img--l" src="/dist/img/bluekc-laptop.png" alt="" role="presentation"/>
+              <img class="u-img u-img--m" src="/dist/img/bluekc-tablet.png" alt="" role="presentation"/>
+              <img class="u-img u-img--s" src="/dist/img/bluekc-mobile.png" alt="" role="presentation"/>
+            </div>
+            <div class="featured-work-description u-pt--l">
+              <div>
+                <h3 class="u-heading--m">The Blueprint</h3>
+                <p>During my tenure at Chemistry, I was tasked with managing several of BlueKC's digital presence catalog. The Blueprint was the first site I built from the ground-up.</p>
+                <p>This project was a massive undertaking and involved communicating with marketing strategists, designers, user-experience practitioners, and project managers. Within a short time frame, I converted complex business logic and detailed Figma files into a Wordpress website with customized editing experiences.</p>
+                <a class="btn" href="https://wwww.bluekc.com/blueprint">Visit The Blueprint</a>
+              </div>
+              <div>
+                <h4 class="u-heading--s">Features</h4>
+                <ul class="u-list--checkboxes">
+                  <li>Wordpress CMS - custom theme</li>
+                  <li>Visually optimized for large desktops, tablets, and mobile devices</li>
+                  <li>WCAG-compliant keyboard accessible navigation</li>
+                  <li>Custom search and AJAX results population</li>
+                  <li>ACF Pro customized editing experience</li>
+                  <li>Custom database queries</li>
+                  <li>Referrer entrypoint-driven content</li>
+                  <li>Configurable filter menus</li>
+                </ul>
+              </div>
+            </div>
+            <hr class="u-mt--m u-mb--m">
+            <div class="past-work">
+              <table>
+                <caption><h3 class="u-heading--s">Recent Work</h3></caption>
+                <thead>
+                <tr>
+                  <th scope="col">Project</th>
+                  <th scope="col">Tech</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td data-label="Project"><a target="_blank" href="https://www.bluekc.com">Blue KC Home Page</a></td>
+                  <td data-label="Tech">Wordpress, PHP, SQL, ES6, jQuery</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Project"><a target="_blank" href="https://www.shutoutthestigma.com">Shut Out the Stigma</a></td>
+                  <td data-label="Tech">Static HTML/CSS/ES6, Gulp</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Project"><a target="_blank" href="https://www.enosix.com">Enosix Home Page</a></td>
+                  <td data-label="Tech">Wordpress, PHP</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Project"><a target="_blank" href="https://member.bluekc.com">BlueKC Members Landing Page</a></td>
+                  <td data-label="Tech">Static HTML</td>
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Project"><a target="_blank" href="https://www.bluekc.com/benefit-of-blue/">Benefit of Blue Landing Page</a></td>
+                  <td data-label="Tech">Wordpress, PHP, ES6</td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="inner">
+        <h2 class="u-heading--l">About</h2>
+        <div class="random-fact">
+          <h3>Random Fact:</h3>
+          <p>I have played over 2000 shows as a professional drummer!</p>
+          <button>Another random fact, please.</button>
+        </div>
+
       </div>
     </section>
   </div>

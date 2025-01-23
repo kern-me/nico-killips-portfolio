@@ -1,0 +1,47 @@
+@use 'vars';
+
+img {
+  max-width: 100%;
+}
+
+@include vars.breakpoint(xl) {
+  .u-img--xl {
+    display: block;
+  }
+  .u-img--l, .u-img--m, .u-img--s {
+    display: none;
+  }
+}
+
+@include vars.breakpoint(l) {
+  .u-img--l {
+    display: block;
+  }
+  .u-img--xl, .u-img--m, .u-img--s {
+    display: none;
+  }
+}
+
+@include vars.breakpoint(m) {
+  .u-img--m {
+    display: block;
+  }
+  .u-img--xl, .u-img--l, .u-img--s {
+    display: none;
+  }
+}
+
+@include vars.breakpoint(s) {
+  .u-img--s {
+    display: block;
+  }
+  .u-img--xl, .u-img--l, .u-img--m {
+    display: none
+  }
+}
+
+
+
+
+
+

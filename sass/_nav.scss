@@ -26,8 +26,11 @@
 
     .site-header--left {
       .home-link {
+        //font-family: vars.$font-condensed;
+        text-transform: uppercase;
         font-weight: 800;
-        font-size: 1.25rem;
+        font-size: 1rem;
+        letter-spacing: 0.75px;
       }
       p {
         font-size: 0.8rem;

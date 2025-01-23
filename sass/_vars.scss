@@ -9,17 +9,21 @@ $color-dark-gray: #666;
 $color-gray: #EDEAE5;
 $color-body: #010101;
 
+$spacing-l: 4rem;
+$spacing-m: 2rem;
+$spacing-s: 1rem;
+
 @mixin breakpoint($point) {
-  @if $point == small {
-    @media (min-width: 430px) { @content; }
+  @if $point == s {
+    @media (max-width: 430px) { @content; }
   }
-  @else if $point == medium {
-    @media (min-width: 1024.5px) { @content; }
+  @else if $point == m {
+    @media (max-width: 1024px) { @content; }
   }
-  @else if $point == large {
-    @media (min-width: 1920px) { @content; }
+  @else if $point == l {
+    @media (max-width: 1920px) { @content; }
   }
-  @else if $point == xlarge {
-    @media (min-width: 2560px) { @content; }
+  @else if $point == xl {
+    @media (min-width: 1920.5px) { @content; }
   }
 }

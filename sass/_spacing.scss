@@ -1,0 +1,51 @@
+@use 'vars';
+
+
+
+.u-mt {
+  &--l {
+    margin-top: vars.$spacing-l;
+  }
+  &--m {
+    margin-top: vars.$spacing-m;
+  }
+  &--s {
+    margin-top: vars.$spacing-s;
+  }
+}
+
+.u-mb {
+  &--l {
+    margin-bottom: vars.$spacing-l;
+  }
+  &--m {
+    margin-bottom: vars.$spacing-m;
+  }
+  &--s {
+    margin-bottom: vars.$spacing-s;
+  }
+}
+
+.u-pt {
+  &--l {
+    padding-top: vars.$spacing-l;
+  }
+  &--m {
+    padding-top: vars.$spacing-m;
+  }
+  &--s {
+    padding-top: vars.$spacing-s;
+  }
+}
+
+.u-pb {
+  &--l {
+    padding-bottom: vars.$spacing-l;
+  }
+  &--m {
+    padding-bottom: vars.$spacing-m;
+  }
+  &--s {
+    padding-bottom: vars.$spacing-s;
+  }
+}
