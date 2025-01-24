@@ -28,7 +28,7 @@
   max-width: 50rem;
   margin: 0 auto;
   table {
-    border: 1px solid #ccc;
+    border: 1px solid vars.$color-gray;
     border-collapse: collapse;
     margin: 0;
     padding: 0;
@@ -36,25 +36,22 @@
     table-layout: fixed;
 
     caption {
-      font-size: 1.5em;
-      margin: .5em 0 .75em;
+      margin: 0 0 1.5rem;
     }
 
     tr {
-      background-color: #f8f8f8;
-      border: 1px solid #ddd;
-      padding: .35em;
+      border: 1px solid vars.$color-medium-gray;
+      padding: 0.5rem;
     }
 
     th, td {
       padding: 1rem;
-      //text-align: center;
     }
     th {
-      font-size: .85em;
-      letter-spacing: .1em;
+      font-weight: 700;
       text-transform: uppercase;
       text-align: left;
+      background-color: vars.$color-gray;
     }
   }
 
@@ -100,5 +97,13 @@
       }
     }
   }
+}
+
+.u-gap-5 {
+  gap: 5rem;
+  @media (max-width: 700px) {
+     gap: 2rem;
+  }
+
 }
 
