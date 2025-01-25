@@ -1,15 +1,20 @@
 @use 'vars';
 
-.headshot {
-  display: block;
-  width: 15rem;
-  height: 15rem;
+
+.u-img--round {
+  display: flex;
+  border-radius: 100%;
   object-fit: cover;
+  aspect-ratio: 1/1;
   @include vars.breakpoint(s) {
     width: 100%;
     height: auto;
-    aspect-ratio: 1/1;
   }
+}
+
+.headshot {
+  width: 15rem;
+  height: 15rem;
 }
 
 .featured-work-description {

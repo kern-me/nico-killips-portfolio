@@ -60,5 +60,16 @@ section {
 }
 
 .u-content-center {
-  align-self: center;
+  align-self: center
+}
+
+.u-row {
+  .u-align-children--center {
+    justify-content: center;
+    align-items: center;
+  }
+  .u-align-children--start {
+    justify-content: start;
+    align-items: start;
+  }
 }

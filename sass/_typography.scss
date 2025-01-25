@@ -62,7 +62,7 @@ p {
     font-size: 5rem;
     line-height: 0.9;
     @include vars.breakpoint(s) {
-      font-size: 10vw;
+      font-size: 20vw;
     }
   }
   &--m {

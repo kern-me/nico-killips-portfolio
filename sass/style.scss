@@ -13,6 +13,7 @@
 html {
   min-width: 320px;
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,6 +44,8 @@ ul {
     }
   }
 }
+
+
 
 .u-list--checkboxes {
   list-style-type: none;

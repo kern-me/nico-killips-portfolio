@@ -1,10 +1,7 @@
 @use 'vars';
 footer {
   color: white;
-  padding: vars.$section-padding;
-  @include vars.breakpoint(m) {
-    padding: vars.$section-padding-mobile;
-  }
+  padding: vars.$section-padding-mobile;
   .inner {
     display: flex;
     flex-direction: column;

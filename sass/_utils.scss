@@ -4,6 +4,10 @@
   border-radius: 100%;
 }
 
+.u-square-aspect {
+  aspect-ratio: 1/1;
+}
+
 .u-border-top--light {
   border-top: 1px solid vars.$color-gray
 }
