@@ -17,6 +17,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
 
   .inner {
     display: flex;
@@ -28,7 +30,6 @@
 
     .site-header--left {
       .home-link {
-        //font-family: vars.$font-condensed;
         text-transform: uppercase;
         font-weight: 800;
         font-size: 1rem;
@@ -65,7 +66,9 @@
   color: inherit;
   cursor: pointer;
   transition: .3s ease;
-  position: relative;
+  position: fixed;
+  top: 1.5rem;
+  right: 5%;
   z-index: 3;
 
   &:focus {
@@ -133,12 +136,16 @@
   position: fixed;
   width: $width;
   height: 100vh;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.95);
   right: -$width;
   color: white;
   transition: width, right .3s ease-in-out;
   padding: 2rem;
   box-sizing: border-box;
+  @include vars.breakpoint(m) {
+    width: 100vw;
+    right: -100vw;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -155,15 +162,8 @@
   }
 }
 
-
-@container site-wrapper (width < 400px) {
-  .site-nav {
-    width: 100vw;
-    right: -100vw;
-  }
-}
-
 body.menu-open {
+  overflow: hidden;
   .site-nav {
     right: 0;
   }

@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nico Killips - Frontend Web Developer</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta name="description" content="Nico Killips is a frontend web developer from Michigan. He specializes in building websites from scratch and has worked with frameworks such as Bootstrap, Foundation, and Skeleton.">
+  <meta property="og:title" content="Nico Killips - Frontend Web Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nicokillips.com">
+  <meta property="og:image" content="https://nicokillips.com/img/nico-headshot-blk-white.jpg">
   <meta property="og:image:alt" content="">
+  <meta property="og:site_name" content="Nico Killips">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -30,11 +30,16 @@
 <body>
 <main>
   <div class="site-wrapper">
+    <button class="btn-menu" type="button" id="btn_menu">
+      <i class="btn-menu__bars" aria-hidden="true"></i>
+      <span class="visually-hidden">Menu</span>
+    </button>
     <nav class="site-nav">
       <ul id="site_nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a target="_blank" href="https://drive.google.com/file/d/1y5qNYI5cjdr6IicTLGCimVzu4my1p-tS/view?usp=sharing">Resum&#233;</a></li>
         <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
 
@@ -44,22 +49,16 @@
           <a class="home-link" href="/">Nico Killips</a>
           <p>Frontend Developer</p>
         </div>
-        <div class="site-header--right">
-          <button class="btn-menu" type="button" id="btn_menu">
-            <i class="btn-menu__bars" aria-hidden="true"></i>
-            <span class="visually-hidden">Menu</span>
-          </button>
-        </div>
       </div>
     </header>
-    <section class="u-pt--l">
+    <section class="u-pt--xl">
       <div class="inner">
         <div class="u-row u-row--reversed">
           <div class="u-col">
             <h1 class="u-heading--xl">Hi! I'm <span class="u-text--dark-green">Nico.</span></h1>
             <h2 class="u-heading--m u-mb--s">I build websites from scratch (and sometimes with frameworks).</h2>
             <p>I'm a Michigan-based frontend developer who loves building simple, usable, and effective websites.</p>
-            <a target="_blank" href="https://drive.google.com/file/d/1y5qNYI5cjdr6IicTLGCimVzu4my1p-tS/view?usp=sharing" class="btn u-mt--s">Download my Resume</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1y5qNYI5cjdr6IicTLGCimVzu4my1p-tS/view?usp=sharing" class="btn u-mt--s">Download my Resum&#233;</a>
           </div>
           <div class="u-col">
             <img class="u-img--round u-content-center headshot" src="img/nico-headshot-blk-white.jpg" alt="" role="presentation" />
@@ -157,52 +156,48 @@
 
         <div class="u-row u-pt--l">
           <div class="u-col">
-            <div class="skills-lists">
-              <div>
-                <h3 class="u-heading--s">Languages / Frameworks</h3>
-                <ul class="u-list--checkboxes">
-                  <li>Bootstrap</li>
-                  <li>ES5, ES6, jQuery</li>
-                  <li>Foundation</li>
-                  <li>HTML/CSS/JS</li>
-                  <li>Next.js</li>
-                  <li>PHP</li>
-                  <li>Skeleton</li>
-                  <li>Tailwind</li>
-                  <li>Wordpress Theme Development</li>
-                </ul>
-              </div>
+            <h3 class="u-heading--s">Languages / Frameworks</h3>
+            <ul class="u-list--checkboxes">
+              <li>Bootstrap</li>
+              <li>ES5, ES6, jQuery</li>
+              <li>Foundation</li>
+              <li>HTML/CSS/JS</li>
+              <li>Next.js</li>
+              <li>PHP</li>
+              <li>Skeleton</li>
+              <li>Tailwind</li>
+              <li>Wordpress Theme Development</li>
+            </ul>
+          </div>
 
-              <div>
-                <h3 class="u-heading--s">Tools</h3>
-                <ul class="u-list--checkboxes">
-                  <li>Adobe Creative Suite</li>
-                  <li>Browserstack</li>
-                  <li>CSS Preprocessors (SASS, LESS)</li>
-                  <li>Figma</li>
-                  <li>Github / Git</li>
-                  <li>Google Analytics</li>
-                  <li>Gulp</li>
-                  <li>JetBrains IDEs</li>
-                  <li>Package Managers (npm / node.js)</li>
-                </ul>
-              </div>
+          <div class="u-col">
+            <h3 class="u-heading--s">Tools</h3>
+            <ul class="u-list--checkboxes">
+              <li>Adobe Creative Suite</li>
+              <li>Browserstack</li>
+              <li>Figma</li>
+              <li>Github / Git</li>
+              <li>Google Analytics</li>
+              <li>Gulp</li>
+              <li>JetBrains IDEs</li>
+              <li>Node.js / NPM</li>
+              <li>SASS, LESS, HAML</li>
+            </ul>
+          </div>
 
-              <div>
-                <h3 class="u-heading--s">Practices</h3>
-                <ul class="u-list--checkboxes">
-                  <li>Analytics</li>
-                  <li>CI/CD Pipelines</li>
-                  <li>Cross-browser testing</li>
-                  <li>Graceful Degradation</li>
-                  <li>Performance and Optimization</li>
-                  <li>Progressive Enhancement</li>
-                  <li>Responsive Design</li>
-                  <li>SEO feature implementations</li>
-                  <li>WCAG and ADA Compliance</li>
-                </ul>
-              </div>
-            </div>
+          <div class="u-col">
+            <h3 class="u-heading--s">Practices</h3>
+            <ul class="u-list--checkboxes">
+              <li>Analytics</li>
+              <li>CI/CD Pipelines</li>
+              <li>Cross-browser testing</li>
+              <li>Graceful Degradation</li>
+              <li>Performance and Optimization</li>
+              <li>Progressive Enhancement</li>
+              <li>Responsive Design</li>
+              <li>SEO feature implementations</li>
+              <li>WCAG and ADA Compliance</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -237,7 +232,7 @@
           </div>
           <div class="u-col">
             <h3 class="u-heading--s u-pb--s">Present</h3>
-            <p>Whether it's an all-hands meeting or a one-on-one, I'm listening. You never know </p>
+            <p>Whether an all-hands meeting or a one-on-one, I'm listening.</p>
           </div>
         </div>
       </div>
