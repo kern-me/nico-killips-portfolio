@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nico Killips - Frontend Web Developer</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="dist/css/style.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -52,16 +53,17 @@
         </div>
       </div>
     </header>
-    <section>
+    <section class="u-pt--l">
       <div class="inner">
         <div class="u-row u-row--reversed">
           <div class="u-col">
             <h1 class="u-heading--xl">Hi! I'm <span class="u-text--dark-green">Nico.</span></h1>
-            <h2 class="u-heading--m">I build websites from scratch and sometimes with frameworks.</h2>
+            <h2 class="u-heading--m u-mb--s">I build websites from scratch (and sometimes with frameworks).</h2>
             <p>I'm a Michigan-based frontend developer who loves building simple, usable, and effective websites.</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1y5qNYI5cjdr6IicTLGCimVzu4my1p-tS/view?usp=sharing" class="btn u-mt--s">Download my Resume</a>
           </div>
           <div class="u-col">
-            <img class="u-circle u-content-center headshot" src="img/nico-headshot-blk-white.jpg" alt="Nico" />
+            <img class="u-circle u-content-center headshot" src="dist/img/nico-headshot-blk-white.jpg" alt="" role="presentation" />
           </div>
         </div>
       </div>
@@ -133,8 +135,6 @@
                 </tbody>
               </table>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -148,41 +148,82 @@
             <p>As a former designer, I gravitate toward frontend-focused disciplines but throughout my career, I found myself responding
             to various business needs.</p>
             <p>While I specialize in building websites, I also have deep experience building different types of products such as eNewsletters, CRM integrations, banner ads, and social media campaigns. Being immersed in several sides of the digital space has me a better developer and team player.</p>
-            <a href="" target="_blank" class="btn u-mt--s">Learn More on my Blog</a>
           </div>
           <div class="u-col">
-            <ul class="u-list--checkboxes">
-              <li>Wordpress Theme and Plugin Development</li>
-              <li>HTML, CSS, JS</li>
-              <li>CSS Preprocessors</li>
-              <li>ES5, ES6, jQuery</li>
-              <li>PHP</li>
-              <li>Applescript</li>
-              <li>Next.js</li>
-              <li>Gulp</li>
-              <li>CI/CD Pipelines</li>
-              <li>Responsive Design</li>
-            </ul>
+            <h3 class="u-heading--s u-pb--s">Experiments</h3>
+            <p>I've learned a lot over my career, but I'm always learning something new. I enjoy creating sandboxes for new technologies and documenting my findings on my blog over at Hashnode.</p>
+            <a href="https://kernme.hashnode.dev/" target="_blank" class="btn u-mt--s">Learn More on my Blog</a>
+          </div>
+        </div>
+
+        <div class="u-row u-pt--l">
+          <div class="u-col">
+            <div class="skills-lists">
+              <div>
+                <h3 class="u-heading--s">Languages / Frameworks</h3>
+                <ul class="u-list--checkboxes">
+                  <li>Bootstrap</li>
+                  <li>ES5, ES6, jQuery</li>
+                  <li>Foundation</li>
+                  <li>HTML/CSS/JS</li>
+                  <li>Next.js</li>
+                  <li>PHP</li>
+                  <li>Skeleton</li>
+                  <li>Tailwind</li>
+                  <li>Wordpress Theme Development</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="u-heading--s">Tools</h3>
+                <ul class="u-list--checkboxes">
+                  <li>Adobe Creative Suite</li>
+                  <li>Browserstack</li>
+                  <li>CSS Preprocessors (SASS, LESS)</li>
+                  <li>Figma</li>
+                  <li>Github / Git</li>
+                  <li>Google Analytics</li>
+                  <li>Gulp</li>
+                  <li>JetBrains IDEs</li>
+                  <li>Package Managers (npm / node.js)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="u-heading--s">Practices</h3>
+                <ul class="u-list--checkboxes">
+                  <li>Analytics</li>
+                  <li>CI/CD Pipelines</li>
+                  <li>Cross-browser testing</li>
+                  <li>Graceful Degradation</li>
+                  <li>Performance and Optimization</li>
+                  <li>Progressive Enhancement</li>
+                  <li>Responsive Design</li>
+                  <li>SEO feature implementations</li>
+                  <li>WCAG and ADA Compliance</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="u-bg--light u-border-top--light">
+    <footer class="u-bg--dark">
       <div class="inner">
-        <h2 class="u-heading--l">About</h2>
-        <div class="random-fact">
-          <h3>Random Fact:</h3>
-          <p>I have played over 2000 shows as a professional drummer!</p>
-          <button>Another random fact, please.</button>
+        <div class="social-btn-group">
+          <a href="#" class="btn-social btn-social--facebook"><span aria-hidden="false">Facebook</span></a>
+          <a href="#" class="btn-social btn-social--instagram"><span aria-hidden="false">Instagram</span></a>
+          <a href="#" class="btn-social btn-social--linkedin"><span aria-hidden="false">LinkedIn</span></a>
+          <a href="#" class="btn-social btn-social--github"><span aria-hidden="false">Github</span></a>
         </div>
-
+        <p class="copyright u-pt--s">&copy; 2025 Nico Killips</p>
       </div>
-    </section>
+    </footer>
   </div>
 </main>
 
-<script src="js/app.js"></script>
+<script src="dist/js/app.js"></script>
 
 </body>
 

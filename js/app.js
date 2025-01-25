@@ -2,7 +2,6 @@ import "../sass/style.scss";
 
 const site_body = document.body
 const btnMenu = document.getElementById('btn_menu')
-const open_site_menu = document.querySelector('body.menu-open .site-nav')
 const firstMenuItem = document.querySelector('#site_nav > li:nth-child(1) > a');
 
 document.addEventListener('click', event => {
@@ -54,18 +53,6 @@ function trapFocus(element) {
     }
   });
 }
-
-
-
-// Usage example:
-
-//open_site_menu.addEventListener('focusin', () => trapFocus(open_site_menu));
-
-$(function(){
-
-  // jQuery methods go here...
-
-});
 
 
 

@@ -5,6 +5,11 @@
   width: 15rem;
   height: 15rem;
   object-fit: cover;
+  @include vars.breakpoint(s) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
 }
 
 .featured-work-description {
@@ -75,24 +80,29 @@
       }
 
       tr {
-        border-bottom: 3px solid #ddd;
+        //border-bottom: 3px solid #ddd;
         display: block;
         margin-bottom: .625em;
       }
 
       td {
-        border-bottom: 1px solid #ddd;
+        //border-bottom: 1px solid #ddd;
         display: block;
         font-size: .8em;
-        text-align: right;
+        padding: 0;
         &:before {
           content: attr(data-label);
-          float: left;
+          //float: left;
           font-weight: bold;
           text-transform: uppercase;
+          display: none;
         }
         &:last-child {
           border-bottom: 0;
+          display: none;
+        }
+        a {
+          display: block;
         }
       }
     }
@@ -101,9 +111,21 @@
 
 .u-gap-5 {
   gap: 5rem;
-  @media (max-width: 700px) {
-     gap: 2rem;
+  @include vars.breakpoint(m) {
+     gap: 2.5rem;
   }
+}
 
+.skills-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+  @include vars.breakpoint(l) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include vars.breakpoint(m) {
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+  }
 }
 

@@ -1,5 +1,9 @@
 @use 'vars';
 
+p, h1, h2, h3, h4, h5 {
+  text-wrap: pretty;
+}
+
 .barlow {
   font-family: vars.$font-body;
   font-style: normal;
@@ -38,6 +42,9 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   max-width: 75ch;
+  @include vars.breakpoint(m) {
+    max-width: 100%;
+  }
 }
 
 .u-heading {
@@ -47,18 +54,31 @@ p {
     margin-bottom: 1rem;
     margin-left: -3px;
     font-weight: 800;
+    @include vars.breakpoint(s) {
+      font-size: 30vw;
+    }
   }
   &--l {
     font-size: 5rem;
     line-height: 0.9;
+    @include vars.breakpoint(s) {
+      font-size: 10vw;
+    }
   }
   &--m {
     font-size: 2rem;
     line-height: 1;
+    @include vars.breakpoint(s) {
+      font-size: 10vw;
+    }
   }
   &--s {
     font-size: 1.5rem;
   }
+}
+
+.u-font-size--medium {
+  font-size: 1.25rem;
 }
 
 

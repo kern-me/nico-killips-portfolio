@@ -1,3 +1,4 @@
+@use 'vars';
 
 .inner {
   padding: 0 5%;
@@ -9,7 +10,10 @@
 section {
   container-name: section-row;
   container-type: inline-size;
-  padding: 3rem 0;
+  padding: vars.$section-padding;
+  @include vars.breakpoint(m) {
+    padding: vars.$section-padding-mobile;
+  }
 }
 
 .u-row--reversed {

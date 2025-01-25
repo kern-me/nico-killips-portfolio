@@ -3,6 +3,8 @@
 .site-wrapper {
   container-name: site-wrapper;
   container-type: inline-size;
+  display: flex;
+  flex-direction: column;
 }
 
 // NAV
