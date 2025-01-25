@@ -21,7 +21,7 @@
   align-self: center;
   gap: 2.5rem;
   flex-direction: row;
-  @media (max-width: 700px) {
+  @include vars.breakpoint(m) {
     flex-direction: column;
     li {
       padding-bottom: 1.25rem;
