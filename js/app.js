@@ -1,4 +1,4 @@
-import "../sass/style.scss";
+//import "../sass/style.scss";
 
 const site_body = document.body
 const btnMenu = document.getElementById('btn_menu')
