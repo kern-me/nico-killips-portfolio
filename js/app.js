@@ -3,6 +3,7 @@ import "../sass/style.scss";
 const site_body = document.body
 const btnMenu = document.getElementById('btn_menu')
 const firstMenuItem = document.querySelector('#site_nav > li:nth-child(1) > a');
+const site_header = document.querySelector('.site-header');
 
 document.addEventListener('click', event => {
   const btnMenuClicked = btnMenu.contains(event.target)
@@ -25,6 +26,17 @@ document.addEventListener('click', event => {
 if (firstMenuItem.hasFocus) {
   console.log('first menu element is active!')
 }
+
+function scrollToTop() {
+  site_header.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
+scrollToTop();
 
 function trapFocus(element) {
   const focusableElements = element.querySelectorAll(

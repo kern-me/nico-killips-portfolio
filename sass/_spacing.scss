@@ -27,6 +27,9 @@
 }
 
 .u-pt {
+  &--xl {
+    padding-top: vars.$spacing-xl;
+  }
   &--l {
     padding-top: vars.$spacing-l;
   }
