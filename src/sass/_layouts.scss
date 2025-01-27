@@ -73,3 +73,10 @@ section {
     align-items: start;
   }
 }
+
+.u-gap-5 {
+  gap: 5rem;
+  @include vars.breakpoint(m) {
+    gap: 2.5rem;
+  }
+}

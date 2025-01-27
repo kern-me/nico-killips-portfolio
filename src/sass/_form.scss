@@ -1,0 +1,50 @@
+@use 'vars';
+
+form {
+  width: 100%;
+  max-width: 30rem;
+
+  * {
+    font-family: vars.$font-body;
+  }
+  p {
+    &:first-child {
+      label {
+        padding-top: 0;
+      }
+    }
+  }
+
+  label {
+    display: block;
+    padding-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  input {
+    height: 3rem;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+
+  button.btn {
+    font-size: 1.25rem;
+    cursor: pointer;
+    width: 8rem;
+    outline: none;
+    border: none;
+    &:focus {
+      outline: 2px solid vars.$color-dark-gray;
+      color: vars.$color-body
+    }
+  }
+}

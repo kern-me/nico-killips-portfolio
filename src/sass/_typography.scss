@@ -41,7 +41,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+  margin: 0 0 1rem;
   max-width: 75ch;
+  line-height: 1.5;
   @include vars.breakpoint(m) {
     max-width: 100%;
   }
@@ -55,21 +57,21 @@ p {
     margin-left: -3px;
     font-weight: 800;
     @include vars.breakpoint(s) {
-      font-size: 30vw;
+      font-size: 34vw;
     }
   }
   &--l {
     font-size: 5rem;
     line-height: 0.9;
     @include vars.breakpoint(s) {
-      font-size: 20vw;
+      font-size: 18vw;
     }
   }
   &--m {
     font-size: 2rem;
     line-height: 1;
     @include vars.breakpoint(s) {
-      font-size: 10vw;
+      font-size: 9vw;
     }
   }
   &--s {

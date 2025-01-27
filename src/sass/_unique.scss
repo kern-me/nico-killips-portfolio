@@ -85,13 +85,11 @@
       }
 
       tr {
-        //border-bottom: 3px solid #ddd;
         display: block;
         margin-bottom: .625em;
       }
 
       td {
-        //border-bottom: 1px solid #ddd;
         display: block;
         font-size: .8em;
         padding: 0;
@@ -114,23 +112,6 @@
   }
 }
 
-.u-gap-5 {
-  gap: 5rem;
-  @include vars.breakpoint(m) {
-     gap: 2.5rem;
-  }
-}
 
-.skills-lists {
-  //display: grid;
-  //grid-template-columns: 1fr 1fr 1fr;
-  //grid-gap: 5rem;
-  //@include vars.breakpoint(l) {
-  //  grid-template-columns: 1fr 1fr;
-  //}
-  //@include vars.breakpoint(m) {
-  //  grid-template-columns: 1fr;
-  //  grid-gap: 2.5rem;
-  //}
-}
+
 
