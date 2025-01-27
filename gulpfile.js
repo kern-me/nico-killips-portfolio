@@ -6,7 +6,6 @@ const imagemin = require('gulp-imagemin');
 const cache = require('gulp-cache');
 
 const browserSync = require('browser-sync');
-const copy = require('gulp-copy');
 const reload = browserSync.reload;
 
 // ------------------------------------------------- configs
@@ -56,8 +55,17 @@ gulp.task('clean:dist', async function() {
 gulp.task('sass', function () {
   console.log('Building CSS...');
   return gulp.src(paths.sass.src)
+
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    //.pipe(sass().on('error', sass.logError))
+
+    // .pipe(autoprefixer({
+    //   browsers: ['last 2 versions', '> 5%', 'iOS 7'],
+    //   cascade: false
+    // }))
+
     .pipe(gulp.dest(paths.sass.dest))
+
     .pipe(reload({stream:true}));
 });
 
@@ -121,5 +129,5 @@ gulp.task('default', gulp.series('distribute', 'sass', 'min-js', 'html', 'images
   gulp.parallel('message', 'watch', 'browserSync')
 ));
 
-gulp.task('build', gulp.series('sass', 'min-js')
+gulp.task('build', gulp.series('distribute', 'sass', 'min-js', 'html', 'images')
 );
