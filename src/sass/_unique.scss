@@ -44,6 +44,7 @@
     padding: 0;
     width: 100%;
     table-layout: fixed;
+    background: white;
 
     caption {
       margin: 0 0 1.5rem;
@@ -68,6 +69,7 @@
   @media screen and (max-width: 600px) {
     table {
       border: 0;
+      background: none;
 
       caption {
         font-size: 1.3em;
@@ -87,6 +89,7 @@
       tr {
         display: block;
         margin-bottom: .625em;
+        background: white;
       }
 
       td {
@@ -111,6 +114,99 @@
     }
   }
 }
+
+.u-col.brands-list {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  @include vars.breakpoint(s) {
+    gap: 2.5rem;
+  }
+  svg {
+    display: block;
+    width: 14rem;
+    &.logo {
+      &-bluekc {
+        height: 2.25rem;
+        @include vars.breakpoint(m) {
+          height: 2rem;
+        }
+        @include vars.breakpoint(s) {
+          height: 1.25rem;
+        }
+      }
+      &-front-door {
+        height: 1.75rem;
+        @include vars.breakpoint(m) {
+          height: 1.5rem;
+        }
+        @include vars.breakpoint(s) {
+          height: 1rem;
+        }
+      }
+      &-life-fitness {
+        height: 1.75rem;
+        @include vars.breakpoint(m) {
+          height: 1.5rem;
+        }
+        @include vars.breakpoint(s) {
+          height: 1rem;
+        }
+      }
+      &-siemens {
+        height: 2.5rem;
+        @include vars.breakpoint(m) {
+          height: 2rem;
+        }
+        @include vars.breakpoint(s) {
+          height: 1.25rem;
+        }
+      }
+      &-doris-duke {
+        height: 2.75rem;
+        @include vars.breakpoint(m) {
+          height: 2rem;
+        }
+        @include vars.breakpoint(s) {
+          height: 1.5rem;
+        }
+      }
+      &-massage-envy {
+        height: 3.5rem;
+        @include vars.breakpoint(m) {
+          height: 3rem;
+        }
+        @include vars.breakpoint(s) {
+          height: 2rem;
+        }
+      }
+      &-nyl {
+        height: 3.5rem;
+        @include vars.breakpoint(m) {
+          height: 3rem;
+        }
+        @include vars.breakpoint(s) {
+          height: 2rem;
+        }
+      }
+      &-abbott {
+        height: 2.5rem;
+        @include vars.breakpoint(m) {
+          height: 2rem;
+        }
+        @include vars.breakpoint(s) {
+          height: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+
 
 
 
