@@ -29,6 +29,12 @@ const rootFiles = [
   './src/404.html',
   './src/robots.txt',
   './src/site.webmanifest',
+  './src/favicon.ico',
+  './src/favicon.svg',
+  './src/favicon-96x96.png',
+  './src/web-app-manifest-192x192.png',
+  './src/web-app-manifest-512x512.png',
+  './src/apple-touch-icon.png',
 ];
 
 gulp.task('distribute', function() {
