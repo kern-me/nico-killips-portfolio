@@ -7,13 +7,20 @@
   flex-direction: column;
 }
 
+#intro {
+  padding-top: 10rem;
+  @include vars.breakpoint(m) {
+    padding-top: 7rem;
+  }
+}
+
 // NAV
 .site-header {
   background: vars.$color-gray;
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 100%);
   border-bottom: 1px solid #ddd;
   width: 100vw;
-  height: 4rem;
+  height: vars.$nav-height;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,6 +46,10 @@
         font-size: 0.8rem;
         margin: 0;
         letter-spacing: 1px;
+        display: block;
+        @include vars.breakpoint(m) {
+          display: none;
+        }
       }
     }
 

@@ -18,6 +18,8 @@ $spacing-s: 1rem;
 $section-padding: 6rem 0;
 $section-padding-mobile: 3rem 0;
 
+$nav-height: 4rem;
+
 @mixin breakpoint($point) {
   @if $point == s {
     @media (max-width: 430px) { @content; }
