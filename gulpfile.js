@@ -98,7 +98,7 @@ gulp.task('html', function(){
 
 // ------------------------------------ Gulp Testing Message
 gulp.task('message', function () {
-  console.log('It works!!');
+  console.log('');
 });
 
 // ---------------------------------------------- Gulp Watch

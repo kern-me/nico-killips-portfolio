@@ -77,11 +77,19 @@ p {
   &--s {
     font-size: 1.5rem;
   }
+  &--xs {
+    font-size: 1.25rem;
+  }
 }
 
 .u-font-size--medium {
   font-size: 1.25rem;
 }
 
+.u-font--mono {
+  font-family: monospace;
+  color: white;
+  background: vars.$color-dark-gray;
+}
 
 
