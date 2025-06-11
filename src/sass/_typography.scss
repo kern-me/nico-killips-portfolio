@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   max-width: 75ch;
   line-height: 1.5;
   @include vars.breakpoint(m) {
