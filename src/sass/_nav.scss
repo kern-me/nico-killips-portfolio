@@ -122,6 +122,11 @@
     }
   }
 
+  span {
+    position: absolute;
+    top: -20px;
+  }
+
   .menu-open & {
     .btn-menu__bars {
       background-color: transparent;

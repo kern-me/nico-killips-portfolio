@@ -24,6 +24,25 @@ body {
   margin: 0;
 }
 
+button {
+  font-family: vars.$font-body;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+*:focus {
+  outline: 2px solid vars.$color-sea-green;
+  outline-offset: 3px;
+}
+
+.site-footer *:focus {
+  outline: 2px solid white;
+}
+
 em {
   font-style: italic;
 }

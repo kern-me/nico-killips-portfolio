@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-  <title>Nico Killips - Front End Web Developer</title>
+  <title>Nico Killips - Frontend Web Developer</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Nico Killips is a front end web developer / digital consultant and designer from Michigan who has been building web products for brands for over 15 years.">
-  <meta property="og:title" content="Nico Killips - Front End Web Developer and Digital Consultant">
+  <meta name="description" content="Nico Killips is a frontend web developer / digital consultant from Michigan who has been building web products for brands for over 15 years.">
+  <meta property="og:title" content="Nico Killips - Frontend Web Developer and Digital Consultant">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.nicokillips.com">
   <meta property="og:image" content="https://nicokillips.com/img/nico-headshot-2025.jpg">
@@ -31,41 +31,37 @@
 <body>
 <main>
   <div class="site-wrapper">
-
-
+    <button class="btn-menu" type="button" id="btn_menu">
+      <i class="btn-menu__bars" aria-hidden="true"></i>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="site-nav">
+      <ul id="site_nav">
+        <li><a target="_blank" href="https://drive.google.com/file/d/1yOzqQm9UHcZVtnsHVqL-eNcyHYwRIMFa/view?usp=sharing">Resum&#233;</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
     <header class="site-header">
       <div class="inner">
         <div class="site-header--left">
           <a class="home-link" href="/">Nico Killips</a>
-          <p>Front End Web Developer <span>|</span> Digital Consultant</p>
+          <p>Frontend Web Developer <span>|</span> Digital Consultant</p>
         </div>
       </div>
     </header>
-
-    <button class="btn-menu" type="button" id="btn_menu">
-      <i class="btn-menu__bars" aria-hidden="true"></i>
-      <span class="visually-hidden">Menu</span>
-    </button>
-
-    <nav class="site-nav" aria-hidden="true">
-      <ul id="site_nav">
-        <li><a tabindex="-1" target="_blank" href="https://drive.google.com/file/d/1AM5feq1-wBQWjtDtVtZVKAga68mNwmPN/view?usp=sharing">Resum&#233;</a></li>
-        <li><a tabindex="-1" href="#work">Work</a></li>
-        <li><a tabindex="-1" href="#skills">Skills</a></li>
-        <li><a tabindex="-1" href="#about">About</a></li>
-        <li><a tabindex="-1" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
 
     <section id="intro">
       <div class="inner">
         <div class="u-row u-row--reversed">
           <div class="u-col">
             <h1 class="u-heading--xl">Hi! I'm <span class="u-text--dark-green">Nico.</span></h1>
-            <h2 class="u-heading--m u-mb--s">I build simple and effective websites.</h2>
-            <p>I'm a Michigan-based web developer and digital designer with over 10 years of agency experience. I love helping brands build thoughtful, simple, and effective websites and other digital products.</p>
-            <a target="_blank" href="https://drive.google.com/file/d/1AM5feq1-wBQWjtDtVtZVKAga68mNwmPN/view?usp=sharing" class="btn u-mt--s">Download my Resum&#233;</a>
+            <h2 class="u-heading--m u-mb--s">I build products for the web</h2>
+            <p>I'm a Michigan-based frontend developer and digital consultant of 15 years. I love helping brands build thoughtful, simple, and effective products for the web.</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1yOzqQm9UHcZVtnsHVqL-eNcyHYwRIMFa/view?usp=sharing" class="btn u-mt--s">Download my Resum&#233;</a>
           </div>
           <div class="u-col">
             <img class="u-img--round u-content-center headshot" src="img/nico-headshot-2025.jpg" alt="" role="presentation" />
@@ -79,57 +75,33 @@
         <div class="u-row">
           <div class="u-col">
             <div class="featured-work-img-container u-pt--l">
-              <img class="u-img u-img--xl" loading="lazy" src="img/yoruba-saxon-desktop.png" alt="" role="presentation"/>
-              <img class="u-img u-img--l" loading="lazy" src="img/yoruba-saxon-laptop.png" alt="" role="presentation"/>
-              <img class="u-img u-img--m" loading="lazy" src="img/yoruba-saxon-tablet.png" alt="" role="presentation"/>
-              <img class="u-img u-img--s" loading="lazy" src="img/yoruba-saxon-phone.png" alt="" role="presentation"/>
+              <img class="u-img u-img--xl" src="img/bluekc-large.png" alt="" role="presentation"/>
+              <img class="u-img u-img--l" src="img/bluekc-laptop.png" alt="" role="presentation"/>
+              <img class="u-img u-img--m" src="img/bluekc-tablet.png" alt="" role="presentation"/>
+              <img class="u-img u-img--s" src="img/bluekc-mobile.png" alt="" role="presentation"/>
             </div>
             <div class="featured-work-description u-pt--l">
               <div>
-                <h3 class="u-heading--m u-pb--s">Yoruba Saxon</h3>
-                <p>I had the pleasure of working with <a href="https://www.instagram.com/tykebrandstudio/" target="_blank">Tyke Brand Studio</a> on the redesign of Yoruba Saxon, the film production company led by A-list power-couple David and Jessica Oyelowo.</p>
-                <h4 class="u-heading--xs u-pb--xs">Requirements</h4>
-                <p>The small but mighty team at Yoruba Saxon needed a platform that could support the tailored design and provide an editing experience that felt familiar and had a gentle learning curve.</p>
-                <p>The team wanted to align the launch of the new site with the release of a series called <a href="https://tv.apple.com/us/show/government-cheese/umc.cmc.1pgdmfreds5kuzmeo3xii0746" target="_blank">Government Cheese.</a></p>
-                <h4 class="u-heading--xs u-pb--xs">Solutions</h4>
-                <p>Familiarity and ease of use was achieved by leveraging WordPress with only a handful of plugins to simplify the content management and administrative experiences.</p>
-                <a class="btn u-mt--s" href="https://www.yorubasaxon.com" target="_blank">Visit Yoruba Saxon</a>
+                <h3 class="u-heading--m u-pb--s">The Blueprint</h3>
+                <p>During my tenure at Chemistry, I was tasked with managing several of BlueKC's digital presence catalog. The Blueprint was the first site I built from the ground-up.</p>
+                <p>This project was a massive undertaking and involved communicating with marketing strategists, designers, user-experience practitioners, and project managers. Within a short time frame, I converted complex business logic and detailed Figma files into a Wordpress website with customized editing experiences.</p>
+                <a class="btn u-mt--s" href="https://wwww.bluekc.com/blueprint">Visit The Blueprint</a>
               </div>
               <div>
                 <h4 class="u-heading--s">Features</h4>
                 <ul class="u-list--checkboxes">
-                  <li>Custom WordPress Theme</li>
+                  <li>Wordpress CMS - custom theme</li>
                   <li>Visually optimized for large desktops, tablets, and mobile devices</li>
                   <li>WCAG-compliant keyboard accessible navigation</li>
+                  <li>Custom search and AJAX results population</li>
                   <li>ACF Pro customized editing experience</li>
-                  <li>Stripped down WordPress backend to reduce visual clutter</li>
-                  <li>Angled containers that flow content along their boundaries</li>
+                  <li>Custom database queries</li>
+                  <li>Referrer entrypoint-driven content</li>
+                  <li>Configurable filter menus</li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
-        <h2 class="u-heading--l u-text--center u-pt--xl">Recent Work</h2>
-        <div class="recent-work--row u-pt--l">
-
-          <div class="recent-work--card">
-            <img alt="" role="presentation" src="img/sots-1.png" />
-            <h3>Shutout the Stigma</h3>
-            <div>
-              <p>BlueKC's partnership and joint initiative with the Kansas City Royals aims to normalize and raise awareness of young athletes experiencing mental health challenges. I was tasked with updating this static site with a new design within a short timeframe to align with television marketing campaigns. It uses a simple HTML/CSS/JS (ES6 and jQuery) stack along with node packages to help with pre-compiling and bundling.</p>
-              <a class="btn u-mt--s" href="https://www.shutoutthestigma.com" target="_blank">Visit Site</a>
-            </div>
-          </div>
-
-          <div class="recent-work--card">
-            <img alt="" role="presentation" src="img/blueprint-1.png" />
-            <h3>The Blueprint - BlueKC</h3>
-            <div>
-              <p>During my time at Chemistry, I was in charge of managing several items of BlueKC's catalogue. One of the largest, most challenging sites was The Blueprint. It serves as a resource hub that populates unique content for targeted audiences, determined by the user's entry point (via referrer logic). We used WordPress to enable their marketing team to author and manage content.</p>
-              <a class="btn u-mt--s" href="https://www.bluekc.com/blueprint/" target="_blank">Visit Site</a>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -227,10 +199,10 @@
       <div class="inner">
         <div class="u-row u-gap-5">
           <div class="u-col">
-            <h2 class="u-heading--l u-pb--m">Disciplines</h2>
-            <p>As a former designer, I gravitate toward frontend-focused disciplines, but throughout my career I found myself responding
-            to various business needs and finding ways to add value.</p>
-            <p>While I specialize in building websites, I also have deep experience building different types of products such as eNewsletters, CRM integrations, banner ads, and social media campaigns.</p>
+            <h2 class="u-heading--l u-pb--m">Skills</h2>
+            <p>As a former designer, I gravitate toward frontend-focused disciplines but throughout my career, I found myself responding
+            to various business needs.</p>
+            <p>While I specialize in building websites, I also have deep experience building different types of products such as eNewsletters, CRM integrations, banner ads, and social media campaigns. Being immersed in several sides of the digital space has me a better developer and team player.</p>
           </div>
           <div class="u-col">
             <h3 class="u-heading--s u-pb--s">Experiments</h3>
@@ -289,11 +261,35 @@
     </section>
     <section id="about" class="u-border-top--light">
       <div class="inner">
-        <div class="u-row u-gap-5">
+        <h2 class="u-heading--l">About</h2>
+        <h3 class="u-heading--m u-pt--s">You should work with me because I am...</h3>
+        <div class="u-row u-pt--l u-gap-5">
           <div class="u-col">
-            <h2 class="u-heading--l u-pb--m">About</h2>
-            <p>I grew up in a family of musicians and performing artists</p>
+            <h3 class="u-heading--s u-pb--s">Passionate</h3>
+            <p class="u-mb--0">The desire to produce good work comes from my performing arts background. I am no stranger to practice and hard work.</p>
+          </div>
+          <div class="u-col">
+            <h3 class="u-heading--s u-pb--s">Curious</h3>
+            <p class="u-mb--0">I'm endlessly curious about how things work. I'm not content with simply fixing a bug, I want to know why it happened and how to prevent it.</p>
+          </div>
+          <div class="u-col">
+            <h3 class="u-heading--s u-pb--s">Empathetic</h3>
+            <p class="u-mb--0">My career materialized from responding to the needs of others. I've gained life-long friends simply by being in the trenches with them.</p>
+          </div>
+        </div>
 
+        <div class="u-row u-pt--m u-gap-5">
+          <div class="u-col">
+            <h3 class="u-heading--s u-pb--s">Pragmatic</h3>
+            <p class="u-mb--0">In an industry with budget constraints and deadlines, there is always give and take. I can identify and articulate quick wins, compromises and trade-offs.</p>
+          </div>
+          <div class="u-col">
+            <h3 class="u-heading--s u-pb--s">Communicative</h3>
+            <p class="u-mb--0">A team in lock-step is unstoppable. Which is why I keep my team looped in, even when I'm running into issues.</p>
+          </div>
+          <div class="u-col">
+            <h3 class="u-heading--s u-pb--s">Present</h3>
+            <p class="u-mb--0">Whether an all-hands meeting or a one-on-one, I'm listening.</p>
           </div>
         </div>
       </div>
@@ -304,10 +300,10 @@
         <div class="u-row u-gap-5">
           <div class="u-col">
             <h2 class="u-heading--l u-pb--m">Contact</h2>
-            <p class="u-font-size--medium u-max-width--narrow">I'm always looking for new opportunities to work with great people. If you're interested in working with me, please send me a message.</p>
+            <p class="u-font-size--medium u-max-width--narrow">I'm always looking for new opportunities. If you're interested in working with me, please send me a message.</p>
             <form class="u-pt--m" name="contact" method="POST" netlify>
-              <p><label for="contact_form_name">Name:</label><input id="contact_form_name" type="text" name="name" /></p>
-              <p><label for="contact_form_email">Email:</label><input id="contact_form_email" type="text" name="email" /></p>
+              <p><label for="contact_form_name">Your Name:</label><input id="contact_form_name" type="text" name="name" /></p>
+              <p><label for="contact_form_email">Your Email:</label><input id="contact_form_email" type="text" name="email" /></p>
               <p><label for="contact_form_message">Message:</label><textarea id="contact_form_message" name="message"></textarea></p>
               <p><button class="btn" type="submit">Send</button></p>
             </form>
@@ -316,7 +312,7 @@
       </div>
     </section>
 
-    <footer class="site-footer u-bg--dark">
+    <footer class="u-bg--dark">
       <div class="inner">
         <div class="social-btn-group">
           <a href="https://www.facebook.com/nicokillips" class="btn-social btn-social--facebook"><span aria-hidden="false">Facebook</span></a>
