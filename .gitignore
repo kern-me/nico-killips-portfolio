@@ -1,1 +1,13 @@
 /node_modules/
+*.idea/
+*.vscode/
+*.DS_Store
+*.zip
+*.tar
+*.gz
+*.bz2
+*.rar
+*.7z
+*.xz
+*.exe
+*.dll
