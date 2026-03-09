@@ -22,6 +22,11 @@ var paths = {
   js: {
     src: 'src/js/*.js',
     dest: 'dist/js/',
+  },
+  images: {
+    // Include all common image types so new images in src/img are always picked up
+    src: 'src/img/**/*.+(png|jpg|jpeg|gif|svg|webp|ico|avif)',
+    dest: 'dist/img/'
   }
 };
 
@@ -46,12 +51,12 @@ gulp.task('distribute', function() {
 // ---------------------------------------------- Gulp Tasks
 
 gulp.task('images', async function(){
-  return gulp.src('src/img/**/*.+(png|jpg|jpeg|gif|svg)')
-    // Caching images that ran through imagemin
+  return gulp.src(paths.images.src)
+    // Caching images that ran through imagemin (skips non-image files)
     .pipe(cache(imagemin({
       interlaced: true
     })))
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest(paths.images.dest));
 });
 
 gulp.task('clean:dist', async function() {
@@ -114,8 +119,15 @@ gulp.task('watch:html', function () {
   gulp.watch(paths.html.src, gulp.series('html'));
 });
 
+gulp.task('watch:images', function () {
+  gulp.watch(paths.images.src, gulp.series('images', function (done) {
+    reload();
+    done();
+  }));
+});
+
 gulp.task('watch',
-  gulp.parallel('watch:styles', 'watch:js', 'watch:html')
+  gulp.parallel('watch:styles', 'watch:js', 'watch:html', 'watch:images')
 );
 
 gulp.task('browserSync', function() {

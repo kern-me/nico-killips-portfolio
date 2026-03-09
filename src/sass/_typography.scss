@@ -51,14 +51,20 @@ p {
 
 .u-heading {
   &--xl {
-    font-size: 8rem;
-    line-height: 0.9;
+    font-size: 6rem;
     margin-bottom: 1rem;
     margin-left: -3px;
     font-weight: 800;
+    line-height: 0.9;
+
     @include vars.breakpoint(s) {
       font-size: 34vw;
     }
+
+    @include vars.breakpoint(m) {
+      font-size: 4rem;
+    }
+    
   }
   &--l {
     font-size: 5rem;

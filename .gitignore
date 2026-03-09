@@ -1,6 +1,7 @@
 /node_modules/
 *.idea/
 *.vscode/
+/portfolio/
 *.DS_Store
 *.zip
 *.tar
